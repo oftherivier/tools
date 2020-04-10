@@ -1,0 +1,36 @@
+{
+  "default": {
+    "extends": [
+      "config:base"
+      ],
+      "automerge": true,
+      "automergeType": "branch",
+      "lockFileMaintenance": {
+        "enabled": true,
+        "extends": "schedule:monthly",
+        "semanticCommitType": "chore"
+      },
+      "postUpdateOptions": [
+        "yarnDedupeHighest"
+      ],
+      "semanticCommits": true,
+      "rangeStrategy": "replace",
+      "engines": {
+        "enabled": false
+      },
+      "packageRules": [
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "rangeStrategy": "pin"
+        },
+        {
+          "depTypeList": [
+            "peerDependencies"
+          ],
+          "rangeStrategy": "widen"
+        }
+      ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@oftherivier/tools",
+  "version": "0.0.0",
+  "author": "@oftherivier",
+  "license": "MIT",
+  "main": "src/index.js",
+  "bin": {
+    "otr": "src/index.js"
+  },
+  "dependencies": {
+    "eslint-plugin-es5": "^1.5.0",
+    "prettier-standard": "^16.2.1"
+  },
+  "devDependencies": {
+    "tap": "^14.10.7",
+    "yargs": "^15.3.1"
+  }
+}
