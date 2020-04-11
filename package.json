@@ -1,0 +1,27 @@
+{
+  "name": "@oftherivier/tools",
+  "version": "0.0.0",
+  "author": "@oftherivier",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "otr": "src/index.js"
+  },
+  "scripts": {
+    "self": "./src/index.js",
+    "lint": "yarn self style --lint",
+    "format": "yarn self style --format",
+    "checks": "yarn self lint",
+    "release": "yarn self release",
+    "prepublishOnly": "yarn checks"
+  },
+  "dependencies": {
+    "eslint-plugin-es5": "^1.5.0",
+    "prettier-standard": "^16.2.1",
+    "standard-version": "^7.1.0",
+    "tap": "^14.10.7",
+    "tsd": "^0.11.0",
+    "yargs": "^15.3.1"
+  }
+}
