@@ -11,4 +11,4 @@ fi
 
 yarn install
 maybeRun bootstrap
-maybeRun all
+maybeRun checks
