@@ -22,6 +22,7 @@ echo "# $name" > readme.md
 echo "module.exports = require('@oftherivier/tools/prettier')" > .prettierrc.js
 echo "module.exports = require('@oftherivier/tools/eslint')" > .eslintrc.js
 
+touch CHANGELOG.md
 touch index.js
 touch index.d.ts
 touch index.test-d.ts
