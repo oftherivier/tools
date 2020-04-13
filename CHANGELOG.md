@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/oftherivier/tools/compare/v0.1.0...v0.1.1) (2020-04-13)
+
+
+### Features
+
+* **lint:** Allow unused _ vars ([41e0a55](https://github.com/oftherivier/tools/commit/41e0a55464c5d29d9a2e4adebfee098f14f68348))
+
 ## [0.1.0](https://github.com/oftherivier/tools/compare/v0.0.2...v0.1.0) (2020-04-12)
 
 ### [0.0.2](https://github.com/oftherivier/tools/compare/v0.0.1...v0.0.2) (2020-04-12)
