@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/oftherivier/tools/compare/v0.1.1...v0.1.2) (2020-04-13)
+
+
+### Features
+
+* **deps:** Add standard as a dependency for better editor support ([831e6ae](https://github.com/oftherivier/tools/commit/831e6aeb01fc3b328b7e186f57013a0197590e86))
+* **greenkeeping:** Use default automerge type (PR) instead of branch ([f3f2bff](https://github.com/oftherivier/tools/commit/f3f2bff37ef0195c885a624bf772bdfc1990b5b6))
+
 ### [0.1.1](https://github.com/oftherivier/tools/compare/v0.1.0...v0.1.1) (2020-04-13)
 
 
