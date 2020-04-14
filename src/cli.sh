@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 dir="$(dirname $0)"
 
 :new() {
@@ -14,7 +15,10 @@ dir="$(dirname $0)"
 }
 
 :release() {
+  maybeRun checks
   standard-version $@
+  git push --follow-tags origin master
+  npm publish
 }
 
 :typetest() {
@@ -26,11 +30,22 @@ dir="$(dirname $0)"
 }
 
 :bootstrap() {
-  $dir/bootstrap.sh $@
+  if [ -z "$NVM_DIR" ]; then
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    . "$HOME/.nvm/nvm.sh"
+  fi
+
+  yarn install
+  maybeRun bootstrap
+  maybeRun checks
 }
 
 :help() {
   declare -F | awk '{print $NF}' | grep '^:' | sed -E 's/:/* /g'
+}
+
+maybeRun() {
+  (yarn run 2> /dev/null | grep $1 2>&1 > /dev/null) && yarn run $1
 }
 
 if [[ -z "$@" ]] || [[ "$@" == "--help" ]]; then
