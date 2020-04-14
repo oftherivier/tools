@@ -6,11 +6,11 @@ dir="$(dirname $0)"
 }
 
 :lint() {
-  eslint $@
+  eslint ${@:-.}
 }
 
 :format() {
-  prettier --write $@
+  prettier --write ${@:-.}
 }
 
 :release() {

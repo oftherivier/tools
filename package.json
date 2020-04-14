@@ -10,7 +10,7 @@
   },
   "scripts": {
     "self": "./src/index.js",
-    "lint": "yarn self lint .",
+    "lint": "yarn self lint",
     "format": "yarn self format",
     "checks": "yarn self lint",
     "release": "yarn self release",
