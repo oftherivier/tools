@@ -20,7 +20,7 @@ echo "$nodeVersion" > .nvmrc
 yarn set version "$yarnVersion"
 echo "# $name" > readme.md
 echo "module.exports = require('@oftherivier/tools/prettier')" > .prettierrc.js
-echo "module.exports = require('@oftherivier/tools/eslint')" > .eslintrc.js
+echo "module.exports = require('@oftherivier/tools/eslint/es5-lib')" > .eslintrc.js
 
 touch CHANGELOG.md
 touch index.js

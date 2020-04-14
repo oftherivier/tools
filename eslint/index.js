@@ -1,7 +1,21 @@
-const es5 = require('./es5')
-
 module.exports = {
+  extends: ['eslint:recommended'],
+
+  parserOptions: {
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: true
+    },
+    sourceType: 'module'
+  },
+
+  env: {
+    es6: true,
+    node: true
+  },
+
   rules: {
+    'no-var': ['error'],
     'no-unused-expressions': 'off',
     'no-multiple-empty-lines': ['error', { max: 2 }],
     'no-unused-vars': [
@@ -13,11 +27,5 @@ module.exports = {
         ignoreRestSiblings: false
       }
     ]
-  },
-  overrides: [
-    {
-      files: ['./*.js', 'src/**/*.js'],
-      ...es5
-    }
-  ]
+  }
 }
