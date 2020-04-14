@@ -44,9 +44,9 @@ $dir/assoc.js ./package.json << EOL
   "type": "commonjs",
   "author": "@oftherivier",
   "scripts": {
-    "lint": "otr style --lint",
-    "format": "otr style --format",
-    "test": "otr test './tests/**/*.test.js'",
+    "lint": "otr lint",
+    "format": "otr format",
+    "test": "otr test './tests/**/*.test.*'",
     "typetest": "otr typetest",
     "checks": "yarn lint && yarn typetest && yarn test",
     "release": "otr release",
