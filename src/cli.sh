@@ -18,7 +18,7 @@ dir="$(dirname $0)"
   maybeRun checks
   standard-version $@
   git push --follow-tags origin master
-  npm publish
+  yarn publish
 }
 
 :typetest() {
