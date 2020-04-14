@@ -70,7 +70,6 @@ EOL
 cat > .travis.yml << EOL
 language: node_js
 node_js:
-  - 8
   - 10
   - 12
   - 13
