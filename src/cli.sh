@@ -26,7 +26,7 @@ dir="$(dirname $0)"
 }
 
 :test() {
-  tap $@
+  tap ${@:-'./tests/**/*.test.*'}
 }
 
 :bootstrap() {
