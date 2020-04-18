@@ -1,9 +1,8 @@
 #!/bin/bash
-set -e
-dir="$(dirname $0)"
+. $OTR_BASE
 
 :new() {
-  $dir/new/new.sh $@
+  call "$DIR/new/new" $@
 }
 
 :lint() {
@@ -29,6 +28,10 @@ dir="$(dirname $0)"
   tap ${@:-'./tests/**/*.test.*'}
 }
 
+:build() {
+  call "$DIR/build" $@
+}
+
 :bootstrap() {
   if [[ ! -s "$HOME/.avn/bin/avn.sh" ]]; then
     npm i -g n avn avn-n avn-nvm
@@ -41,16 +44,9 @@ dir="$(dirname $0)"
   maybeRun checks
 }
 
-:help() {
-  declare -F | awk '{print $NF}' | grep '^:' | sed -E 's/:/* /g'
-}
+for dir in $OTR_EXTENSION_DIRS; do
+  DIR="$dir/cli" . $dir/cli/cli.sh
+done
 
-maybeRun() {
-  (yarn run 2> /dev/null | grep $1 2>&1 > /dev/null) && yarn run $1
-}
-
-if [[ -z "$@" ]] || [[ "$@" == "--help" ]]; then
-  :help
-else
-  :$@
-fi
+run $@
+end

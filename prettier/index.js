@@ -1,4 +1,6 @@
-module.exports = {
+const { define } = require('../confutils')
+
+module.exports = define({
   arrowParens: 'avoid',
   bracketSpacing: true,
   jsxBracketSameLine: false,
@@ -11,4 +13,4 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'none',
   useTabs: false
-}
+})

@@ -7,20 +7,9 @@ Our project tooling packaged up for dryness and simpler dependency management:
 - greenkeeping
 - scaffolding
 - releasing
+- transpiling
+- bundling
 
 ```
 npx @oftherivier/tools --help
-otr [command]
-
-Commands:
-  otr bootstrap  run this first time you clone a project
-  otr new        scaffold out a new project
-  otr style      linting and formatting
-  otr test       run tests
-  otr typetest   run type tests
-  otr release    create a new release
-
-Options:
-  --version  Show version number                                       [boolean]
-  --help     Show help                                                 [boolean]
 ```

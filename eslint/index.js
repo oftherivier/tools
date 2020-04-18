@@ -1,4 +1,6 @@
-module.exports = {
+const { define } = require('../confutils')
+
+module.exports = define({
   extends: ['eslint:recommended'],
 
   parserOptions: {
@@ -28,4 +30,4 @@ module.exports = {
       }
     ]
   }
-}
+})

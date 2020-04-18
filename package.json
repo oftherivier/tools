@@ -4,24 +4,33 @@
   "author": "@oftherivier",
   "license": "MIT",
   "type": "commonjs",
-  "main": "src/index.js",
+  "main": "cli/cli.js",
   "bin": {
-    "otr": "src/index.js"
+    "otr": "cli/cli.js"
   },
   "scripts": {
-    "self": "./src/index.js",
+    "self": "./cli/cli.js",
     "lint": "yarn self lint",
     "format": "yarn self format",
     "checks": "yarn self lint",
     "release": "yarn self release"
   },
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-es5": "^1.5.0",
+    "pkg-up": "^3.1.0",
     "prettier": "^2.0.4",
     "standard-version": "^7.1.0",
     "tap": "^14.10.7",
     "tsd": "^0.11.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
     "yargs": "^15.3.1"
   }
 }

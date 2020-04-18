@@ -1,18 +1,20 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See
+[standard-version](https://github.com/conventional-changelog/standard-version)
+for commit guidelines.
 
 ### [0.1.4](https://github.com/oftherivier/tools/compare/v0.1.3...v0.1.4) (2020-04-14)
 
-
 ### Features
 
-* **release:** Handle release step ordering internally ([ecffeb0](https://github.com/oftherivier/tools/commit/ecffeb03ecfb91c8bdf894c53c7b1d41ee8f5716))
-
+- **release:** Handle release step ordering internally
+  ([ecffeb0](https://github.com/oftherivier/tools/commit/ecffeb03ecfb91c8bdf894c53c7b1d41ee8f5716))
 
 ### Bug Fixes
 
-* **style:** Provide default arg for linting and formatting ([b99351f](https://github.com/oftherivier/tools/commit/b99351f40608a7a9e250bfda720f68d3232e9cc8))
+- **style:** Provide default arg for linting and formatting
+  ([b99351f](https://github.com/oftherivier/tools/commit/b99351f40608a7a9e250bfda720f68d3232e9cc8))
 
 ### [0.1.3](https://github.com/oftherivier/tools/compare/v0.1.2...v0.1.3) (2020-04-14)
 
