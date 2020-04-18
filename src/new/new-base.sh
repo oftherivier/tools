@@ -16,7 +16,7 @@ git init
 yarn init -y
 $dir/new-license.sh @oftherivier
 
-echo "$nodeVersion" > .nvmrc
+echo "$nodeVersion" > .node-version
 yarn set version "$yarnVersion"
 echo "# $name" > readme.md
 echo "module.exports = require('@oftherivier/tools/prettier')" > .prettierrc.js

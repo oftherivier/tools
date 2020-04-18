@@ -30,9 +30,10 @@ dir="$(dirname $0)"
 }
 
 :bootstrap() {
-  if [ -z "$NVM_DIR" ]; then
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-    . "$HOME/.nvm/nvm.sh"
+  if [[ ! -s "$HOME/.avn/bin/avn.sh" ]]; then
+    npm i -g n avn avn-n avn-nvm
+    n $(cat .node-version)
+    . "$HOME/.avn/bin/avn.sh"
   fi
 
   yarn install
