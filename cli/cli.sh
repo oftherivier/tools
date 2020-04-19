@@ -17,7 +17,7 @@
   maybeRun checks
   standard-version $@
   git push --follow-tags origin master
-  yarn publish
+  npm publish
 }
 
 :typetest() {
