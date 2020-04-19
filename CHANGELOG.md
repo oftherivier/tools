@@ -1,8 +1,21 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version)
-for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.5](https://github.com/oftherivier/tools/compare/v0.1.4...v0.1.5) (2020-04-19)
+
+
+### Features
+
+* Support react projects ([f938c25](https://github.com/oftherivier/tools/commit/f938c251f0369dd9ab755740d9e858fe916aced1))
+* Use avn ([3e84403](https://github.com/oftherivier/tools/commit/3e84403ec189b2b17142b99f52a0a6471a94533a))
+* **release:** Use yarn instead of npm for publish step ([9b16c3a](https://github.com/oftherivier/tools/commit/9b16c3adf9929f4f9379a97cd710905a7ea62b89))
+* **scaffolding:** Make way for react type ([ddb3917](https://github.com/oftherivier/tools/commit/ddb3917881c3cd9ada53a02d39ac3ed2ec16966f))
+
+
+### Bug Fixes
+
+* **scaffolding:** Change outdated scripts after removing standard ([4b34e7b](https://github.com/oftherivier/tools/commit/4b34e7b0ba2584f6c27e15ae3c1f2a1c8df8f894))
 
 ### [0.1.4](https://github.com/oftherivier/tools/compare/v0.1.3...v0.1.4) (2020-04-14)
 
