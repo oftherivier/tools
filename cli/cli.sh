@@ -15,6 +15,7 @@
 
 :release() {
   maybeRun checks
+  maybeRun build
   standard-version $@
   git push --follow-tags origin master
   npm publish
