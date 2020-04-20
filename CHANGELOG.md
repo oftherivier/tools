@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/oftherivier/tools/compare/v0.1.12...v0.1.13) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Invoke scripts through yarn at the end ([a76f0d6](https://github.com/oftherivier/tools/commit/a76f0d675123ca5a012ac1add1637ed5a1cc840b))
+
 ### [0.1.12](https://github.com/oftherivier/tools/compare/v0.1.11...v0.1.12) (2020-04-20)
 
 
