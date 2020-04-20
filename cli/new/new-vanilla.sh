@@ -24,8 +24,9 @@ import tap from 'tap'
 tap.equal(true, true)
 EOL
 
-mkdir src
-touch src/index.{js,d.ts,test-d.ts}
+mkdir {src,test-d}
+touch src/index.{js,d.ts}
+touch test-d/index.test-d.ts
 
 yarn format
 otr bootstrap
