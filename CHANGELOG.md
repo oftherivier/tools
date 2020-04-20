@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.21](https://github.com/oftherivier/tools/compare/v0.1.20...v0.1.21) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Provide correct arguments to base scaffolding script ([a326705](https://github.com/oftherivier/tools/commit/a3267058d96af9edaac4728a8fb9e90512d047da))
+
 ### [0.1.20](https://github.com/oftherivier/tools/compare/v0.1.19...v0.1.20) (2020-04-20)
 
 
