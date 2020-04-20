@@ -8,11 +8,11 @@ scripts() {
 
 if [[ "$OTR_TYPE" != "es5" ]]; then
   :cjs() {
-    scripts "${2:-dest/cjs}" "$1" ${@:3}
+    scripts "${2:-dist/cjs}" "$1" ${@:3}
   }
 
   :mjs() {
-    BABEL_MJS=1 scripts "${2:-dest/mjs}" "$1"
+    BABEL_MJS=1 scripts "${2:-dist/mjs}" "$1"
   }
 fi
 

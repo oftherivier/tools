@@ -6,8 +6,7 @@ extend "$DIR/new-base"
 mkdir tests
 
 cat > tests/$NAME.test.js << EOL
-import tap from 'tap'
-// import { _ } from '~'
+const tap = require('tap')
 
 tap.equal(true, true)
 EOL

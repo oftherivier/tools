@@ -11,6 +11,7 @@ mkdir -p tests/unit
 
 cat > tests/unit/$NAME.test.js << EOL
 import tap from 'tap'
+// import { _ } from '~'
 
 tap.equal(true, true)
 EOL
@@ -42,13 +43,13 @@ mkdir -p src/js
 touch src/js/index.js
 
 mkdir -p src/scss
-touch src/scss/index.entry.scss
+touch scss/scss/index.scss
 
 mkdir -p examples/simple
 
 cat > examples/simple/simple.page.js << EOL
 import React from 'react'
-// import * as _ from '$NAME'
+// import { _ } from '~'
 
 const SimpleExample = () => (
   <div>A simple example</div>
@@ -57,11 +58,11 @@ const SimpleExample = () => (
 render(SimpleExample)
 EOL
 
-mkdir -p dev/sandbox
+mkdir dev
 
 cat > dev/dev.page.js << EOL
 import React from 'react'
-// import * as _ from '$NAME'
+// import { _ } from '~'
 
 const Sandbox = () => (
   <div>This is your sandbox, put anything here</div>
@@ -72,3 +73,4 @@ EOL
 
 otr format
 otr bootstrap
+otr start

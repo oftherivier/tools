@@ -4,6 +4,8 @@
 nodeVersion="$(node --version)"
 yarnVersion="$(yarn --version)"
 
+TYPE="${TYPE:-$1}"
+
 if [[ "$2" ]] && [[ "$2" != "." ]]; then
   mkdir -p "$2"
   cd $2
@@ -23,30 +25,30 @@ echo "module.exports = require('@oftherivier/tools/prettier')()" > .prettierrc.j
 
 $DIR/assoc.js ./package.json << EOL
 {
+  "type": "commonjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    "import": "dist/mjs/index.js",
+    "require": "dist/cjs/index.js"
+  },
+  "oftherivier": {
+    "type": "$TYPE"
+  },
   "scripts": {
     "lint": "otr lint",
-    "build": "otr build all",
+    "build": "otr build",
     "format": "otr format",
     "test": "otr test",
     "typetest": "otr typetest",
     "checks": "yarn lint && yarn typetest && yarn test",
     "release": "otr release"
   },
-  "oftherivier": {
-    "type": "vanilla"
-  }
 }
 EOL
 
-if [[ "$type" == "es5" ]]; then
+if [[ "$TYPE" == "es5" ]]; then
   echo "module.exports = require('@oftherivier/tools/eslint/es5')()'" > .eslintrc.js
-
-  $DIR/assoc.js ./package.json << EOL
-  {
-    "oftherivier": {
-      "type": "vanilla"
-    }
-  }
 EOL
 else
   echo "module.exports = require('@oftherivier/tools/eslint')()'" > .eslintrc.js

@@ -5,6 +5,10 @@
   call "$DIR/new-vanilla" $@
 }
 
+:es5() {
+  call "$DIR/new-es5" $@
+}
+
 :react() {
   call "$DIR/new-react" $@
 }

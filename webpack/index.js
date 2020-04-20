@@ -1,22 +1,26 @@
 const path = require('path')
+const { sync: pkgUp } = require('pkg-up')
 const { resolve } = require('../confutils')
 
 module.exports = function conf(overrides = {}) {
   const env = conf.mode || process.env.NODE_ENV || 'development'
   const isPrd = env === 'production'
+  const rootDir = path.dirname(pkgUp())
 
   const context = {
     env,
-    isPrd
+    isPrd,
+    rootDir
   }
 
   const result = resolve(
     [
       {
         mode: env,
+        entry: {},
         devtool: isPrd ? 'source-map' : 'cheap-module-source-map',
         output: {
-          path: path.resolve(process.cwd(), 'dist'),
+          path: path.resolve(rootDir, 'dist'),
           filename: '[name].js'
         },
         module: {

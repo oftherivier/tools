@@ -12,7 +12,9 @@ hook:empty() {
 }
 
 maybeRun() {
-  (yarn run 2> /dev/null | grep $1 2>&1 > /dev/null) && yarn run $1
+  if (yarn run 2> /dev/null | grep $1); then
+    yarn run $1
+  fi
 }
 
 call() {
