@@ -22,7 +22,6 @@ $DIR/assoc.js ./package.json << EOL
     "start": "otr start"
   },
   "oftherivier": {
-    "type": "react",
     "extensions": ["@oftherivier/ui-tools"]
   },
   "peerDependencies": {

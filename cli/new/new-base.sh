@@ -27,6 +27,11 @@ $DIR/assoc.js ./package.json << EOL
   "oftherivier": {
     "type": "$TYPE"
   },
+  "renovate": {
+    "extends": [
+      "github>oftherivier/tools"
+    ]
+  },
   "scripts": {
     "lint": "otr lint",
     "format": "otr format",
