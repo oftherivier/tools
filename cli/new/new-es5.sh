@@ -15,5 +15,5 @@ touch index.js
 touch index.d.ts
 touch index.test-d.ts
 
-otr format
-otr bootstrap
+yarn format
+yarn bootstrap
