@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/oftherivier/tools/compare/v0.1.10...v0.1.11) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Fix syntax errors in generated config files ([8d048be](https://github.com/oftherivier/tools/commit/8d048bebd3f04de8fff8f5f22face52f5e9a08c9))
+
 ### [0.1.10](https://github.com/oftherivier/tools/compare/v0.1.9...v0.1.10) (2020-04-20)
 
 
