@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/oftherivier/tools/compare/v0.1.8...v0.1.9) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Apply correct package.json changes ([7e5ec24](https://github.com/oftherivier/tools/commit/7e5ec24f8d1377d052bad6f3b51cea75a91ba5b1))
+
 ### [0.1.8](https://github.com/oftherivier/tools/compare/v0.1.7...v0.1.8) (2020-04-20)
 
 
