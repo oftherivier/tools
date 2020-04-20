@@ -71,6 +71,6 @@ const Sandbox = () => (
 render(Sandbox)
 EOL
 
-otr format
-otr bootstrap
-otr start
+yarn format
+yarn bootstrap
+yarn start
