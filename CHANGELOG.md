@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.23](https://github.com/oftherivier/tools/compare/v0.1.22...v0.1.23) (2020-04-20)
+
+
+### Bug Fixes
+
+* **build:** Fix umd bundling for es5 type ([aa031f3](https://github.com/oftherivier/tools/commit/aa031f3c223d22992e8dde453c9cdb66f2705513))
+
 ### [0.1.22](https://github.com/oftherivier/tools/compare/v0.1.21...v0.1.22) (2020-04-20)
 
 
