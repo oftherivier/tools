@@ -3,7 +3,7 @@
 export NODE_ENV="${NODE_ENV:-production}"
 
 scripts() {
-  babel "${2:-src/js}" --out-dir "$1" ${@:3}
+  babel "${2:-src}" --out-dir "$1" ${@:3}
 }
 
 if [[ "$OTR_TYPE" != "es5" ]]; then

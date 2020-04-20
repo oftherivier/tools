@@ -4,7 +4,7 @@
 nodeVersion="$(node --version)"
 yarnVersion="$(yarn --version)"
 
-TYPE="${TYPE:-$1}"
+TYPE="${TYPE:-$2}"
 
 if [[ "$2" ]] && [[ "$2" != "." ]]; then
   mkdir -p "$2"
