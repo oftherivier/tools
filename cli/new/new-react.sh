@@ -43,7 +43,7 @@ mkdir -p src/js
 touch src/js/index.js
 
 mkdir -p src/scss
-touch scss/scss/index.scss
+touch src/scss/index.scss
 
 mkdir -p examples/simple
 
