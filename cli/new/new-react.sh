@@ -19,7 +19,8 @@ EOL
 $DIR/assoc.js ./package.json << EOL
 {
   "scripts": {
-    "start": "otr start"
+    "start": "otr start",
+    "checks": "yarn lint && yarn test",
   },
   "oftherivier": {
     "extensions": ["@oftherivier/ui-tools"]

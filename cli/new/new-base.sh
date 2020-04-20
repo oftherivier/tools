@@ -36,8 +36,6 @@ $DIR/assoc.js ./package.json << EOL
     "lint": "otr lint",
     "format": "otr format",
     "test": "otr test",
-    "typetest": "otr typetest",
-    "checks": "yarn lint && yarn typetest && yarn test",
     "release": "otr release"
   }
 }

@@ -3,6 +3,15 @@
 
 extend "$DIR/new-base"
 
+$DIR/assoc.js ./package.json << EOL
+{
+  "scripts": {
+    "typetest": "otr typetest",
+    "checks": "yarn lint && yarn typetest && yarn test",
+  }
+}
+EOL
+
 mkdir tests
 
 cat > tests/$NAME.test.js << EOL
