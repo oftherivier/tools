@@ -1,7 +1,7 @@
-import { define } from '../confutils'
-import { presetEnv } from './common'
+const { define } = require('../confutils')
+const { presetEnv } = require('./common')
 
-export const conf = define({
+module.exports = define({
   presets: [presetEnv],
   plugins: [
     [
@@ -16,5 +16,3 @@ export const conf = define({
     ]
   ]
 })
-
-export default conf()
