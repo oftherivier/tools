@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.16](https://github.com/oftherivier/tools/compare/v0.1.15...v0.1.16) (2020-04-20)
+
+
+### Bug Fixes
+
+* **lint:** Lint jsx correctly ([ddc4533](https://github.com/oftherivier/tools/commit/ddc45335c6147f2b2faf55b9272d9f4a88561440))
+* **new:** Bring back renovate config ([ae30846](https://github.com/oftherivier/tools/commit/ae308462796f2cb6f4a9675cc4c13510a028e5b3))
+* **new:** Fix es5 scaffolding ([e02a1b5](https://github.com/oftherivier/tools/commit/e02a1b5806a7122cd146e114fe06556278736c0c))
+
 ### [0.1.15](https://github.com/oftherivier/tools/compare/v0.1.14...v0.1.15) (2020-04-20)
 
 
