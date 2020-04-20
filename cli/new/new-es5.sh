@@ -8,6 +8,9 @@ $DIR/assoc.js ./package.json << EOL
   "scripts": {
     "typetest": "otr typetest",
     "checks": "yarn lint && yarn typetest && yarn test"
+  },
+  "oftherivier": {
+    "src": "index.js"
   }
 }
 EOL
@@ -20,9 +23,7 @@ const tap = require('tap')
 tap.equal(true, true)
 EOL
 
-touch index.js
-touch index.d.ts
-touch index.test-d.ts
+touch index.{js,d.ts,test-d.ts}
 
 yarn format
 otr bootstrap

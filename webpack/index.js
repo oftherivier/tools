@@ -17,11 +17,13 @@ module.exports = function conf(overrides = {}) {
     [
       {
         mode: env,
-        entry: {},
+        entry: process.env.OTR_SRC ? { main: process.env.OTR_SRC } : {},
         devtool: isPrd ? 'source-map' : 'cheap-module-source-map',
         output: {
-          path: path.resolve(rootDir, 'dist'),
-          filename: '[name].js'
+          path: path.resolve(rootDir, 'dist', 'umd'),
+          libraryTarget: 'umd',
+          library: process.env.OTR_PKG_NAME,
+          filename: `${process.env.OTR_PKG_NAME}.js`
         },
         module: {
           rules: {

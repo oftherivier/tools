@@ -17,7 +17,7 @@ if [[ "$OTR_TYPE" != "es5" ]]; then
 fi
 
 :umd() {
-  : # todo
+  webpack
 }
 
 :scripts() {

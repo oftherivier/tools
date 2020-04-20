@@ -20,9 +20,10 @@ $DIR/assoc.js ./package.json << EOL
 {
   "scripts": {
     "start": "otr start",
-    "checks": "yarn lint && yarn test",
+    "checks": "yarn lint && yarn test"
   },
   "oftherivier": {
+    "src": "src/js/index.js",
     "extensions": ["@oftherivier/ui-tools"]
   },
   "peerDependencies": {

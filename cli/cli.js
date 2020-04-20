@@ -20,6 +20,7 @@ function main() {
     OTR_PKG_NAME: conf.name,
     OTR_TYPE: conf.type,
     OTR_DIR: __dirname,
+    OTR_SRC: conf.src || '',
     OTR_BASE: path.join(__dirname, 'base.sh'),
     OTR_EXTENSION_DIRS: extensions
   })
@@ -38,6 +39,7 @@ function readConf() {
   return {
     name: pkg.name,
     type: 'bleeding',
+    src: null,
     extensions: [],
     ...pkg.oftherivier
   }

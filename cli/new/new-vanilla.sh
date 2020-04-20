@@ -8,6 +8,9 @@ $DIR/assoc.js ./package.json << EOL
   "scripts": {
     "typetest": "otr typetest",
     "checks": "yarn lint && yarn typetest && yarn test"
+  },
+  "oftherivier": {
+    "src": "src/index.js"
   }
 }
 EOL
@@ -21,9 +24,8 @@ import tap from 'tap'
 tap.equal(true, true)
 EOL
 
-touch index.js
-touch index.d.ts
-touch index.test-d.ts
+mkdir src
+touch src/index.{js,d.ts,test-d.ts}
 
 yarn format
 otr bootstrap
