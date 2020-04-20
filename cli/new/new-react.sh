@@ -72,5 +72,5 @@ render(Sandbox)
 EOL
 
 yarn format
-yarn bootstrap
+otr bootstrap
 yarn start

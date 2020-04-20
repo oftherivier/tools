@@ -17,4 +17,4 @@ touch index.d.ts
 touch index.test-d.ts
 
 yarn format
-yarn bootstrap
+otr bootstrap
