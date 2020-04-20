@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.15](https://github.com/oftherivier/tools/compare/v0.1.14...v0.1.15) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Bootstrap script isnt a yarn script ([b0470fe](https://github.com/oftherivier/tools/commit/b0470fec64204ab1e7bed9ac1924ca7993598138))
+
 ### [0.1.14](https://github.com/oftherivier/tools/compare/v0.1.13...v0.1.14) (2020-04-20)
 
 
