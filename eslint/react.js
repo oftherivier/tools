@@ -3,7 +3,7 @@ const base = require('.')
 module.exports = (overrides = {}) =>
   base(({ append }) => [
     {
-      plugin: ['react'],
+      plugins: ['react'],
       env: {
         browser: true
       },
@@ -11,6 +11,10 @@ module.exports = (overrides = {}) =>
         ecmaFeatures: {
           jsx: true
         }
+      },
+      rules: {
+        'react/jsx-uses-react': 'error',
+        'react/jsx-uses-vars': 'error'
       },
       overrides: append([
         {
