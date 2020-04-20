@@ -4,9 +4,9 @@
 nodeVersion="$(node --version)"
 yarnVersion="$(yarn --version)"
 
-if [ "$1" ]; then
-  mkdir -p "$1"
-  cd $1
+if [[ "$2" ]] && [[ "$2" != "." ]]; then
+  mkdir -p "$2"
+  cd $2
 fi
 
 export NAME="$(basename $PWD)"
