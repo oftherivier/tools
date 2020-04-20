@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.24](https://github.com/oftherivier/tools/compare/v0.1.23...v0.1.24) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Fix syntax errors in generated pkg ([6db3b25](https://github.com/oftherivier/tools/commit/6db3b25674db3b417eeca270fcb19038aef8a026))
+
 ### [0.1.23](https://github.com/oftherivier/tools/compare/v0.1.22...v0.1.23) (2020-04-20)
 
 
