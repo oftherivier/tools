@@ -8,7 +8,12 @@ function main() {
   const conf = readConf()
 
   // reversed for later scripts to take command precedence
-  const extensions = conf.extensions.map(resolveExtension).reverse().join(' ')
+  const extensions = conf.extensions
+    .map(maybeResolve)
+    .filter(Boolean)
+    .map(path.dirname)
+    .reverse()
+    .join(' ')
 
   Object.assign(process.env, {
     DIR: __dirname,
@@ -26,10 +31,6 @@ function main() {
   process.exit(result.status)
 }
 
-function resolveExtension(extension) {
-  return path.dirname(require.resolve(extension))
-}
-
 function readConf() {
   const pkgPath = pkgUp()
   const pkg = pkgPath ? require(pkgPath) : {}
@@ -39,6 +40,14 @@ function readConf() {
     type: 'bleeding',
     extensions: [],
     ...pkg.oftherivier
+  }
+}
+
+function maybeResolve(name) {
+  try {
+    return require.resolve(name)
+  } catch (_) {
+    return null
   }
 }
 
