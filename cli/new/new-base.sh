@@ -33,6 +33,7 @@ $DIR/assoc.js ./package.json << EOL
     ]
   },
   "scripts": {
+    "build" "otr build",
     "lint": "otr lint",
     "format": "otr format",
     "test": "otr test",
@@ -55,9 +56,6 @@ else
   "exports": {
     "import": "dist/mjs/index.js",
     "require": "dist/cjs/index.js"
-  },
-  "scripts": {
-    "build": "otr build"
   }
 }
 EOL

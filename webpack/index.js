@@ -17,7 +17,11 @@ module.exports = function conf(overrides = {}) {
     [
       {
         mode: env,
-        entry: process.env.OTR_SRC ? { main: process.env.OTR_SRC } : {},
+        entry: {
+          ...(process.env.OTR_SRC && {
+            main: path.resolve(rootDir, process.env.OTR_SRC)
+          })
+        },
         devtool: isPrd ? 'source-map' : 'cheap-module-source-map',
         output: {
           path: path.resolve(rootDir, 'dist', 'umd'),
@@ -27,18 +31,20 @@ module.exports = function conf(overrides = {}) {
         },
         module: {
           rules: {
-            js: {
-              test: /\.js$/,
-              exclude: /node_modules/,
-              use: [
-                process.env.OTR_TYPE !== 'es5' && {
-                  loader: 'babel-loader',
-                  options: {
-                    cacheDirectory: true
+            ...(process.env.OTR_TYPE !== 'es5' && {
+              js: {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                  {
+                    loader: 'babel-loader',
+                    options: {
+                      cacheDirectory: true
+                    }
                   }
-                }
-              ]
-            }
+                ]
+              }
+            })
           }
         }
       },

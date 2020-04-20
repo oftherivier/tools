@@ -6,15 +6,17 @@ scripts() {
   babel "${2:-src}" --out-dir "$1" ${@:3}
 }
 
-if [[ "$OTR_TYPE" != "es5" ]]; then
-  :cjs() {
+:cjs() {
+  if [[ "$OTR_TYPE" != "es5" ]]; then
     scripts "${2:-dist/cjs}" "$1" ${@:3}
-  }
+  fi
+}
 
-  :mjs() {
+:mjs() {
+  if [[ "$OTR_TYPE" != "es5" ]]; then
     BABEL_MJS=1 scripts "${2:-dist/mjs}" "$1"
-  }
-fi
+  fi
+}
 
 :umd() {
   webpack
