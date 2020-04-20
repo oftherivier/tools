@@ -39,10 +39,10 @@ $DIR/assoc.js ./package.json << EOL
 EOL
 
 if [[ "$TYPE" == "es5" ]]; then
-  echo "module.exports = require('@oftherivier/tools/eslint/es5')()'" > .eslintrc.js
+  echo "module.exports = require('@oftherivier/tools/eslint/es5')()" > .eslintrc.js
 EOL
 else
-  echo "module.exports = require('@oftherivier/tools/eslint')()'" > .eslintrc.js
+  echo "module.exports = require('@oftherivier/tools/eslint')()" > .eslintrc.js
   echo "module.exports = require('@oftherivier/tools/babel/vanilla')()" > babel.config.js
 
   $DIR/assoc.js ./package.json << EOL

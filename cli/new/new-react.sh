@@ -3,7 +3,7 @@
 
 extend "$DIR/new-base"
 
-echo "module.exports = require('@oftherivier/tools/eslint/react')()'" > .eslintrc.js
+echo "module.exports = require('@oftherivier/tools/eslint/react')()" > .eslintrc.js
 echo "module.exports = require('@oftherivier/tools/babel/react')()" > babel.config.js
 echo "module.exports = require('@oftherivier/ui-tools/webpack/dev')()" > webpack.dev.config.js
 
