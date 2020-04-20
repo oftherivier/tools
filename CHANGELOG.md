@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/oftherivier/tools/compare/v0.1.16...v0.1.17) (2020-04-20)
+
+
+### Bug Fixes
+
+* **new:** Configure react eslint plugin correctly ([52949f8](https://github.com/oftherivier/tools/commit/52949f8823ba9c325b43d975fd27bd1d35923fb8))
+
 ### [0.1.16](https://github.com/oftherivier/tools/compare/v0.1.15...v0.1.16) (2020-04-20)
 
 
