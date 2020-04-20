@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/oftherivier/tools/compare/v0.1.7...v0.1.8) (2020-04-20)
+
+
+### Features
+
+* Improvements after testing out scaffolding ([9beecdf](https://github.com/oftherivier/tools/commit/9beecdf6707da3d704287cefec5fdcbdc480c078))
+
+
+### Bug Fixes
+
+* **new:** Look at correct position argument for creating project dir ([8f23db6](https://github.com/oftherivier/tools/commit/8f23db601337b7da58f2c67022e02586c15ebacc))
+* **new:** Scaffold out index scss with correct path ([1519e0f](https://github.com/oftherivier/tools/commit/1519e0fc401efdb174ed1e874e38ccf16c9713ae))
+* **release:** Build on release ([0419c9e](https://github.com/oftherivier/tools/commit/0419c9e6559ff81fdbbb9e704874261bc43b5940))
+
 ### [0.1.7](https://github.com/oftherivier/tools/compare/v0.1.6...v0.1.7) (2020-04-19)
 
 ### [0.1.6](https://github.com/oftherivier/tools/compare/v0.1.5...v0.1.6) (2020-04-19)
