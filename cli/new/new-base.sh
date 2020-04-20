@@ -33,7 +33,7 @@ $DIR/assoc.js ./package.json << EOL
     ]
   },
   "scripts": {
-    "build" "otr build",
+    "build": "otr build",
     "lint": "otr lint",
     "format": "otr format",
     "test": "otr test",
