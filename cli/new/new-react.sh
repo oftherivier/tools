@@ -1,7 +1,7 @@
 #!/bin/bash
 . $OTR_BASE
 
-extend "$DIR/new-base"
+extend "$DIR/new-base" react $@
 
 echo "module.exports = require('@oftherivier/tools/eslint/react')()" > .eslintrc.js
 echo "module.exports = require('@oftherivier/tools/babel/react')()" > babel.config.js

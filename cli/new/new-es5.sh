@@ -1,7 +1,7 @@
 #!/bin/bash
 . $OTR_BASE
 
-extend "$DIR/new-base"
+extend "$DIR/new-base" es5 $@
 
 $DIR/assoc.js ./package.json << EOL
 {
