@@ -22,28 +22,19 @@ echo "$nodeVersion" > .node-version
 echo "# $NAME" > readme.md
 echo "module.exports = require('@oftherivier/tools/prettier')()" > .prettierrc.js
 
-
 $DIR/assoc.js ./package.json << EOL
 {
-  "type": "commonjs",
-  "main": "dist/cjs/index.js",
-  "module": "dist/mjs/index.js",
-  "exports": {
-    "import": "dist/mjs/index.js",
-    "require": "dist/cjs/index.js"
-  },
   "oftherivier": {
     "type": "$TYPE"
   },
   "scripts": {
     "lint": "otr lint",
-    "build": "otr build",
     "format": "otr format",
     "test": "otr test",
     "typetest": "otr typetest",
     "checks": "yarn lint && yarn typetest && yarn test",
     "release": "otr release"
-  },
+  }
 }
 EOL
 
@@ -53,6 +44,22 @@ EOL
 else
   echo "module.exports = require('@oftherivier/tools/eslint')()'" > .eslintrc.js
   echo "module.exports = require('@oftherivier/tools/babel/vanilla')()" > babel.config.js
+
+  $DIR/assoc.js ./package.json << EOL
+{
+  "type": "commonjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    "import": "dist/mjs/index.js",
+    "require": "dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "otr build"
+  }
+}
+EOL
+
 fi
 
 echo "module.exports = require('@oftherivier/tools/webpack')()" > webpack.config.js
