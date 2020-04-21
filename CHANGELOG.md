@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/oftherivier/tools/compare/v0.1.25...v0.1.26) (2020-04-21)
+
+
+### Bug Fixes
+
+* **build:** Fix vanilla babel script to use cjs ([928f62c](https://github.com/oftherivier/tools/commit/928f62c0481a8893ac1c429f8882e1f9fe867d57))
+* **new:** Fix type testing for vanilla ([1720bbd](https://github.com/oftherivier/tools/commit/1720bbd1f7bccf48c1f2342bf693922506b38579))
+
 ### [0.1.25](https://github.com/oftherivier/tools/compare/v0.1.24...v0.1.25) (2020-04-20)
 
 ### [0.1.24](https://github.com/oftherivier/tools/compare/v0.1.23...v0.1.24) (2020-04-20)
