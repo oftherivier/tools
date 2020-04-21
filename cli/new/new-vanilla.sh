@@ -25,6 +25,7 @@ tap.equal(true, true)
 EOL
 
 mkdir {src,test-d}
+touch index.d.ts
 touch src/index.{js,d.ts}
 touch test-d/index.test-d.ts
 

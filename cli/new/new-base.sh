@@ -69,6 +69,7 @@ touch CHANGELOG.md
 cat > .eslintignore << EOL
 .yarn
 .nyc_output
+dist
 EOL
 
 cp .eslintignore .prettierignore
