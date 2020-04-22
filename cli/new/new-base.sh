@@ -79,6 +79,7 @@ node_modules
 .nyc_output
 yarn-error.log
 dev
+dist
 EOL
 
 if [[ "$TESTING" ]]; then
