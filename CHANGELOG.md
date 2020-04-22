@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.27](https://github.com/oftherivier/tools/compare/v0.1.26...v0.1.27) (2020-04-22)
+
+
+### Bug Fixes
+
+* **new:** Gitignore dist ([8381b00](https://github.com/oftherivier/tools/commit/8381b00961281aca4a45ab6f8b8cdaad3830f733))
+
 ### [0.1.26](https://github.com/oftherivier/tools/compare/v0.1.25...v0.1.26) (2020-04-21)
 
 
