@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.28](https://github.com/oftherivier/tools/compare/v0.1.27...v0.1.28) (2020-04-23)
+
+
+### Bug Fixes
+
+* **linting:** Separate vanilla from base eslint config ([a71aec0](https://github.com/oftherivier/tools/commit/a71aec011bab72803ba3d5cff011e3bc555b62e7))
+
 ### [0.1.27](https://github.com/oftherivier/tools/compare/v0.1.26...v0.1.27) (2020-04-22)
 
 
