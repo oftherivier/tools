@@ -14,7 +14,6 @@ module.exports = define({
   },
 
   rules: {
-    'no-var': ['error'],
     'no-unused-expressions': 'off',
     'no-multiple-empty-lines': ['error', { max: 2 }],
     'no-unused-vars': [
