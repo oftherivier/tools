@@ -3,6 +3,8 @@
 
 extend "$DIR/new-base" vanilla $@
 
+echo "module.exports = require('@oftherivier/tools/eslint/vanilla')()" > .eslintrc.js
+
 $DIR/assoc.js ./package.json << EOL
 {
   "scripts": {
