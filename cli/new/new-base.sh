@@ -24,6 +24,7 @@ echo "module.exports = require('@oftherivier/tools/prettier')()" > .prettierrc.j
 
 $DIR/assoc.js ./package.json << EOL
 {
+  "version": "0.0.0",
   "oftherivier": {
     "type": "$TYPE"
   },
