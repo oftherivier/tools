@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.31](https://github.com/oftherivier/tools/compare/v0.1.30...v0.1.31) (2020-04-25)
+
+
+### Bug Fixes
+
+* **webpack:** Use this as globalObject for umd ([5d8f39b](https://github.com/oftherivier/tools/commit/5d8f39b2e7a6487f4c4545f2d9706f84df16b9b9))
+
 ### [0.1.30](https://github.com/oftherivier/tools/compare/v0.1.29...v0.1.30) (2020-04-24)
 
 
