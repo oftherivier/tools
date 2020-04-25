@@ -27,7 +27,8 @@ module.exports = function conf(overrides = {}) {
           path: path.resolve(rootDir, 'dist', 'umd'),
           libraryTarget: 'umd',
           library: process.env.OTR_PKG_NAME,
-          filename: `${process.env.OTR_PKG_NAME}.js`
+          filename: `${process.env.OTR_PKG_NAME}.js`,
+          globalObject: 'this'
         },
         module: {
           rules: {
