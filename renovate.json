@@ -1,6 +1,7 @@
 {
   "extends": ["config:base"],
   "automerge": true,
+  "rebaseWhen": "behind-base-branch",
   "lockFileMaintenance": {
     "enabled": true,
     "extends": "schedule:monthly",
