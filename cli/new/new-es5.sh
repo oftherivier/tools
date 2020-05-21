@@ -20,9 +20,12 @@ EOL
 mkdir tests
 
 cat > tests/$NAME.test.js << EOL
-const tap = require('tap')
+import test from 'ava'
+// import { _ } from '~'
 
-tap.equal(true, true)
+test('_', t => {
+  t.pass()
+})
 EOL
 
 touch index.{js,d.ts,test-d.ts}
