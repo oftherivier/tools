@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.34](https://github.com/oftherivier/tools/compare/v0.1.33...v0.1.34) (2020-05-21)
+
+
+### Bug Fixes
+
+* **new:** Remove remaining tap remnants for real ([10b643a](https://github.com/oftherivier/tools/commit/10b643a86ce70b8fd9a94066b96d723c30134b0e))
+
 ### [0.1.33](https://github.com/oftherivier/tools/compare/v0.1.32...v0.1.33) (2020-05-21)
 
 
