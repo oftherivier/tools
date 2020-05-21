@@ -10,10 +10,12 @@ echo "module.exports = require('@oftherivier/ui-tools/webpack/dev')()" > webpack
 mkdir -p tests/unit
 
 cat > tests/unit/$NAME.test.js << EOL
-import tap from 'tap'
+import test from 'ava'
 // import { _ } from '~'
 
-tap.equal(true, true)
+test('_', t => {
+  t.pass()
+})
 EOL
 
 $DIR/assoc.js ./package.json << EOL
