@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.35](https://github.com/oftherivier/tools/compare/v0.1.34...v0.1.35) (2020-05-21)
+
+
+### Bug Fixes
+
+* **new:** Use commonjs for tests now that we use ava ([f7ffbb3](https://github.com/oftherivier/tools/commit/f7ffbb327a20b24a521ac260c2cb6edd4b94dc92))
+
 ### [0.1.34](https://github.com/oftherivier/tools/compare/v0.1.33...v0.1.34) (2020-05-21)
 
 
