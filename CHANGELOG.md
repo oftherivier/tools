@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.32](https://github.com/oftherivier/tools/compare/v0.1.31...v0.1.32) (2020-05-21)
+
+
+### Features
+
+* **renovate:** Rebase branches when behind base ([e5c7742](https://github.com/oftherivier/tools/commit/e5c7742bef0599748e3c8437a018f060aeddea6c))
+* **test:** Switch from tap to ava ([f0d303b](https://github.com/oftherivier/tools/commit/f0d303b7163297bc82424f6cdd6a13c064824323))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint to v7 ([f86beba](https://github.com/oftherivier/tools/commit/f86beba939e8c6bdde6f5e049ddf7828a3841fef))
+* **deps:** update dependency standard-version to v8 ([f07434c](https://github.com/oftherivier/tools/commit/f07434c0e041a25254e8b24cf4b89f6bc14deaba))
+
 ### [0.1.31](https://github.com/oftherivier/tools/compare/v0.1.30...v0.1.31) (2020-04-25)
 
 
