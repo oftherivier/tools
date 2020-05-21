@@ -26,7 +26,7 @@
 }
 
 :test() {
-  tap ${@:-'./tests/**/*.test.*'}
+  ava ${@:-'./tests/**/*.test.*'}
 }
 
 :build() {

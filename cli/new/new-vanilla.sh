@@ -20,10 +20,12 @@ EOL
 mkdir tests
 
 cat > tests/$NAME.test.js << EOL
-import tap from 'tap'
+import test from 'ava'
 // import { _ } from '~'
 
-tap.equal(true, true)
+test('_', t => {
+  t.pass()
+})
 EOL
 
 mkdir {src,test-d}
