@@ -20,8 +20,7 @@ EOL
 mkdir tests
 
 cat > tests/$NAME.test.js << EOL
-import test from 'ava'
-// import { _ } from '~'
+const test = require('ava')
 
 test('_', t => {
   t.pass()

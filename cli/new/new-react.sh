@@ -10,8 +10,7 @@ echo "module.exports = require('@oftherivier/ui-tools/webpack/dev')()" > webpack
 mkdir -p tests/unit
 
 cat > tests/unit/$NAME.test.js << EOL
-import test from 'ava'
-// import { _ } from '~'
+const test = require('ava')
 
 test('_', t => {
   t.pass()
