@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.37](https://github.com/oftherivier/tools/compare/v0.1.36...v0.1.37) (2020-05-24)
+
+
+### Features
+
+* **build:** Support configurable lib name for umd ([13ae615](https://github.com/oftherivier/tools/commit/13ae6150f3539224ffd9054e363cf3a0b23d8dee))
+
 ### [0.1.36](https://github.com/oftherivier/tools/compare/v0.1.35...v0.1.36) (2020-05-24)
 
 
