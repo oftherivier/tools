@@ -18,6 +18,7 @@ function main() {
   Object.assign(process.env, {
     DIR: __dirname,
     OTR_PKG_NAME: conf.name,
+    OTR_LIB_NAME: conf.libName || conf.name,
     OTR_TYPE: conf.type,
     OTR_DIR: __dirname,
     OTR_SRC: conf.src || '',
