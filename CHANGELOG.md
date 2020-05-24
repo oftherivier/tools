@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.36](https://github.com/oftherivier/tools/compare/v0.1.35...v0.1.36) (2020-05-24)
+
+
+### Features
+
+* Add @ava/babel for projects that transpile ([cdb331f](https://github.com/oftherivier/tools/commit/cdb331f1d1d006e2787d0b2f83185088b1c8a940))
+
 ### [0.1.35](https://github.com/oftherivier/tools/compare/v0.1.34...v0.1.35) (2020-05-21)
 
 
