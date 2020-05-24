@@ -10,7 +10,7 @@ echo "module.exports = require('@oftherivier/ui-tools/webpack/dev')()" > webpack
 mkdir -p tests/unit
 
 cat > tests/unit/$NAME.test.js << EOL
-const test = require('ava')
+import test from 'ava'
 
 test('_', t => {
   t.pass()
@@ -26,6 +26,9 @@ $DIR/assoc.js ./package.json << EOL
   "oftherivier": {
     "src": "src/js/index.js",
     "extensions": ["@oftherivier/ui-tools"]
+  },
+  "ava": {
+    "babel": true
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"
