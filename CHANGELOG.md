@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.38](https://github.com/oftherivier/tools/compare/v0.1.37...v0.1.38) (2020-05-28)
+
+
+### Features
+
+* **lint:** Allow es5+esm ([c82e9c9](https://github.com/oftherivier/tools/commit/c82e9c9b737f177571e354e1faea1d0ce352b43f))
+
+
+### Bug Fixes
+
+* **lint:** Exclude config files from es5 rule ([7cf4257](https://github.com/oftherivier/tools/commit/7cf4257751b683bb9fd29327ff59cce161a17b2d))
+
 ### [0.1.37](https://github.com/oftherivier/tools/compare/v0.1.36...v0.1.37) (2020-05-24)
 
 
