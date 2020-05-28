@@ -9,6 +9,7 @@ module.exports = (overrides = {}) =>
             sourceType: 'script'
           },
           files: ['./*.js', 'src/**/*.js'],
+          excludedFiles: ['./.*.js', './*.config.js'],
           plugins: ['es5'],
           extends: ['plugin:es5/no-es2015']
         }
