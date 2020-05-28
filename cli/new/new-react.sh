@@ -25,7 +25,8 @@ $DIR/assoc.js ./package.json << EOL
   },
   "oftherivier": {
     "src": "src/js/index.js",
-    "extensions": ["@oftherivier/ui-tools"]
+    "extensions": ["@oftherivier/ui-tools"],
+    "srcModuleType": "module"
   },
   "ava": {
     "babel": true

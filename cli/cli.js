@@ -23,6 +23,7 @@ function main() {
     OTR_DIR: __dirname,
     OTR_SRC: conf.src || '',
     OTR_BASE: path.join(__dirname, 'base.sh'),
+    OTR_SRC_MODULE_TYPE: conf.srcModuleType,
     OTR_EXTENSION_DIRS: extensions
   })
 
@@ -42,6 +43,7 @@ function readConf() {
     type: 'bleeding',
     src: null,
     extensions: [],
+    srcModuleType: pkg.type || 'commonjs',
     ...pkg.oftherivier
   }
 }

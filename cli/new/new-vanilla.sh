@@ -12,7 +12,8 @@ $DIR/assoc.js ./package.json << EOL
     "checks": "yarn lint && yarn typetest && yarn test"
   },
   "oftherivier": {
-    "src": "src/index.js"
+    "src": "src/index.js",
+    "srcModuleType": "module"
   }
 }
 EOL

@@ -6,7 +6,8 @@ module.exports = (overrides = {}) =>
       overrides: append([
         {
           parserOptions: {
-            sourceType: 'script'
+            sourceType:
+              process.env.OTR_SRC_MODULE_TYPE === 'module' ? 'module' : 'script'
           },
           files: ['./*.js', 'src/**/*.js'],
           excludedFiles: ['./.*.js', './*.config.js'],
