@@ -8,17 +8,20 @@ scripts() {
 
 :cjs() {
   if [[ "$OTR_TYPE" != "es5" ]]; then
+    [ -d "./dist/cjs" ] && rm -rf "./dist/cjs"
     scripts "${2:-dist/cjs}" "$1" ${@:3}
   fi
 }
 
 :mjs() {
   if [[ "$OTR_TYPE" != "es5" ]]; then
+    [ -d "./dist/mjs" ] && rm -rf "./dist/mjs"
     BABEL_MJS=1 scripts "${2:-dist/mjs}" "$1"
   fi
 }
 
 :umd() {
+  [ -d "./dist/umd" ] && rm -rf "./dist/umd"
   webpack
 }
 
