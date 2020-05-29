@@ -19,6 +19,7 @@ function main() {
     DIR: __dirname,
     OTR_PKG_NAME: conf.name,
     OTR_LIB_NAME: conf.libName || conf.name,
+    OTR_BUNDLE_NAME: conf.bundleName,
     OTR_TYPE: conf.type,
     OTR_DIR: __dirname,
     OTR_SRC: conf.src || '',
@@ -44,6 +45,7 @@ function readConf() {
     src: null,
     extensions: [],
     srcModuleType: pkg.type || 'commonjs',
+    bundleName: pkg.name,
     ...pkg.oftherivier
   }
 }
