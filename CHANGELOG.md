@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.40](https://github.com/oftherivier/tools/compare/v0.1.39...v0.1.40) (2020-05-29)
+
+
+### Bug Fixes
+
+* **build:** Clean before building ([ba7f213](https://github.com/oftherivier/tools/commit/ba7f21328c3686b807d3c5424d0c2fc63d87e912))
+
 ### [0.1.39](https://github.com/oftherivier/tools/compare/v0.1.38...v0.1.39) (2020-05-29)
 
 
