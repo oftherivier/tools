@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.39](https://github.com/oftherivier/tools/compare/v0.1.38...v0.1.39) (2020-05-29)
+
+
+### Features
+
+* **build:** Support configurable umd bundle name ([e664b9e](https://github.com/oftherivier/tools/commit/e664b9e208a0c3a8ad2756f2aa689008f67fba27))
+
 ### [0.1.38](https://github.com/oftherivier/tools/compare/v0.1.37...v0.1.38) (2020-05-28)
 
 
