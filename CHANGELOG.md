@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.42](https://github.com/oftherivier/tools/compare/v0.1.41...v0.1.42) (2020-07-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency standard-version to v8.0.1 [security] ([bd7281c](https://github.com/oftherivier/tools/commit/bd7281c2dded80a04ff0230ffd3f5b9f1df13420))
+* **deps:** update dependency tsd to ^0.12.0 ([c94ca59](https://github.com/oftherivier/tools/commit/c94ca59e67e8801768168d82350a4eaaa246f5c8))
+* **deps:** update dependency tsd to ^0.13.0 ([22218fb](https://github.com/oftherivier/tools/commit/22218fb0fba66fd9cb794bd3916ff87e34b546fc))
+
 ### [0.1.41](https://github.com/oftherivier/tools/compare/v0.1.40...v0.1.41) (2020-05-29)
 
 ### [0.1.40](https://github.com/oftherivier/tools/compare/v0.1.39...v0.1.40) (2020-05-29)
