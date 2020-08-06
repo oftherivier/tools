@@ -2,6 +2,7 @@
   "extends": ["config:base"],
   "automerge": true,
   "rebaseWhen": "behind-base-branch",
+  "schedule": ["after 10am on Monday"],
   "lockFileMaintenance": {
     "enabled": true,
     "extends": "schedule:monthly",
