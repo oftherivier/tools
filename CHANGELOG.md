@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.43](https://github.com/oftherivier/tools/compare/v0.1.42...v0.1.43) (2021-04-10)
+
+
+### Bug Fixes
+
+* **build:** Change build script to work with ui-based libs' dir structure ([3bec0ad](https://github.com/oftherivier/tools/commit/3bec0ad44f9226e84dd5a1eff77a635a16ee2124))
+* **deps:** update dependency standard-version to v9 ([1c7cab7](https://github.com/oftherivier/tools/commit/1c7cab72dc0c00c799cd796750226bfdf0c24c0d))
+* **deps:** update dependency yargs to v16 ([95f471f](https://github.com/oftherivier/tools/commit/95f471f57be0cc45b102e991aba1e06052d2d7bb))
+
 ### [0.1.42](https://github.com/oftherivier/tools/compare/v0.1.41...v0.1.42) (2020-07-14)
 
 
