@@ -1,11 +1,11 @@
 const path = require('path')
-const { sync: pkgUp } = require('pkg-up')
 const { resolve } = require('../confutils')
+const pkgUp = require('find-package-json')
 
 module.exports = function conf(overrides = {}) {
   const env = conf.mode || process.env.NODE_ENV || 'development'
   const isPrd = env === 'production'
-  const rootDir = path.dirname(pkgUp())
+  const rootDir = path.dirname(pkgUp(process.cwd()).next().filename)
 
   const context = {
     env,
