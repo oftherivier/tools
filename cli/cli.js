@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const path = require('path')
 const child = require('child_process')
-const pkgUp = require('pkg-up').sync
+const pkgUp = require('find-package-json')
 
 function main() {
   const args = process.argv.slice(2)
@@ -36,8 +36,7 @@ function main() {
 }
 
 function readConf() {
-  const pkgPath = pkgUp()
-  const pkg = pkgPath ? require(pkgPath) : {}
+  const pkg = pkgUp(process.cwd()).next().value || {}
 
   return {
     name: pkg.name,
