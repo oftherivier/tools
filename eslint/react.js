@@ -1,29 +1,26 @@
+const react = require('eslint-plugin-react')
+const globals = require('globals')
 const base = require('.')
 
-module.exports = (overrides = {}) =>
-  base(({ append }) => [
-    {
-      plugins: ['react'],
-      env: {
-        browser: true
-      },
+module.exports = [
+  ...base,
+  {
+    plugins: [react],
+    languageOptions: {
       parserOptions: {
         ecmaFeatures: {
           jsx: true
         }
       },
-      rules: {
-        'react/jsx-uses-react': 'error',
-        'react/jsx-uses-vars': 'error'
-      },
-      overrides: append([
-        {
-          files: ['./**/*.page.js'],
-          globals: {
-            render: 'writeable'
-          }
-        }
-      ])
+      globals: {
+        ...globals.browser,
+        render: 'writeable'
+      }
     },
-    overrides
-  ])
+    rules: {
+      'react/jsx-uses-react': 'error',
+      'react/jsx-uses-vars': 'error'
+    },
+    files: ['./**/*.page.js']
+  }
+]
