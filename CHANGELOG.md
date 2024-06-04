@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/oftherivier/tools/compare/v0.2.0...v0.2.1) (2024-06-04)
+
+
+### Bug Fixes
+
+* Use npm publish after upgrading yarn ([1ffae11](https://github.com/oftherivier/tools/commit/1ffae11219c6fc388182284ade9d6399f4518561))
+
 ## [0.2.0](https://github.com/oftherivier/tools/compare/v0.1.47...v0.2.0) (2024-06-04)
 
 
