@@ -1,10 +1,7 @@
 const base = require('.')
 
-module.exports = [
-  ...base,
-  {
-    rules: {
-      'no-var': ['error']
-    }
+module.exports = base({
+  rules: {
+    'no-var': ['error']
   }
-]
+})
