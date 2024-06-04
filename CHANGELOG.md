@@ -1,8 +1,15 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version)
-for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.2.0](https://github.com/oftherivier/tools/compare/v0.1.47...v0.2.0) (2024-06-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade deps
+
+* Upgrade deps ([487e74b](https://github.com/oftherivier/tools/commit/487e74b30a000571a33a092032881306ac9f696b))
 
 ### [0.1.47](https://github.com/oftherivier/tools/compare/v0.1.46...v0.1.47) (2022-05-09)
 
