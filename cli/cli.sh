@@ -18,7 +18,7 @@
   maybeRun build
   standard-version $@
   git push --follow-tags origin master
-  yarn publish --ignore-scripts --non-interactive
+  npm publish
 }
 
 :typetest() {
