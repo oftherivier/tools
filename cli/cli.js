@@ -26,8 +26,14 @@ function main() {
     OTR_BASE: path.join(__dirname, 'base.sh'),
     OTR_SRC_MODULE_TYPE: conf.srcModuleType,
     OTR_EXTENSION_DIRS: extensions,
-    NODE_PATH: [process.env.NODE_PATH, path.join(__dirname, '..', 'node_modules')].join(':'),
-    PATH: [process.env.PATH, path.join(__dirname, '..', 'node_modules', '.bin')].join(':')
+    NODE_PATH: [
+      process.env.NODE_PATH,
+      path.join(__dirname, '..', 'node_modules')
+    ].join(':'),
+    PATH: [
+      process.env.PATH,
+      path.join(__dirname, '..', 'node_modules', '.bin')
+    ].join(':')
   })
 
   const result = child.spawnSync(path.join(__dirname, 'cli.sh'), args, {

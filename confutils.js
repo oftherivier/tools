@@ -30,9 +30,14 @@ function resolve(confs, context) {
 }
 
 function define(conf) {
-  return function confFn(overrides) {
-    return resolve([conf, overrides])
+  const self = function confFn(overrides) {
+    return overrides
+      ? define(resolve([conf, ...[].concat(overrides)]))
+      : conf
   }
+
+  Object.assign(self, conf)
+  return self
 }
 
 function join(fn) {

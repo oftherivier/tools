@@ -1,16 +1,18 @@
+const js = require('@eslint/js')
+const globals = require('globals')
 const { define } = require('../confutils')
+const ignores = require('./ignores')
 
-module.exports = define({
-  extends: ['eslint:recommended'],
-
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module'
-  },
-
-  env: {
-    es6: true,
-    node: true
+module.exports = define(js.configs.recommended)([ignores, {
+  languageOptions: {
+    parserOptions: {
+      ecmaVersion: 2020,
+      sourceType: 'module'
+    },
+    globals: {
+      ...globals.es2021,
+      ...globals.node
+    }
   },
 
   rules: {
@@ -20,10 +22,12 @@ module.exports = define({
       'error',
       {
         varsIgnorePattern: '^_',
+        argsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
         vars: 'all',
         args: 'after-used',
         ignoreRestSiblings: false
       }
     ]
-  }
-})
+  },
+}])
